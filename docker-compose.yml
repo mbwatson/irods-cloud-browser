@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  cloud-browser:
+    container_name: cloudbrowser
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/src/
+    ports:
+      - 8080:8080
+
